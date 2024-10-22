@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Race</title>
+</head>
+<body>
+   <div class="road">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="borderline1"></div>
+    <div class="borderline2"></div>
+    <div class="borderline3"></div>
+    <div class="car1 red-car">
+        <div class="top red-top"></div>
+        <div class="wheel1"></div>
+        <div class="wheel2"></div>
+        <div class="wheel3"></div>
+        <div class="wheel4"></div>
+    </div>
+    <div class="car2 blue-car">
+        <div class="top blue-top"></div>
+        <div class="wheel1"></div>
+        <div class="wheel2"></div>
+        <div class="wheel3"></div>
+        <div class="wheel4"></div>
+    </div>
+   </div> 
+</body>
+<style>
+    .road {
+        width: 750px;
+        height: 1000px;
+        background-color: grey;
+        position: relative;
+        left: 350px; 
+    }
+    .line1 {
+        width: 20px;
+        height: 1000px;
+        background-color: black;
+        position: absolute;
+        left: 730px;
+    }
+    .line2 {
+        width: 20px;
+        height: 1000px;
+        background-color: black;
+        position: absolute;
+        left: -10px;
+    }
+    .borderline1 {
+        width: 20px;
+        height: 200px;
+        background-color: black;
+        position: absolute;
+        left: 350px;
+    }
+    .borderline2 {
+        width: 20px;
+        height: 200px;
+        background-color: black;
+        position: absolute;
+        left: 350px;
+        bottom: 400px;
+    }
+    .borderline3 {
+        width: 20px;
+        height: 200px;
+        background-color: black;
+        position: absolute;
+        left: 350px;
+        bottom: 0px;
+    }
+    .car1 {
+        width: 150px;
+        height: 200px;
+        border-radius: 15px;
+        position: absolute;
+        bottom: 0px;
+        animation: drive 3.3s linear infinite;
+    }
+    .car2 {
+        width: 150px;
+        height: 200px;
+        border-radius: 15px;
+        position: absolute;
+        bottom: 100px;
+        animation: drive 3.8s linear infinite;
+    }
+    .red-car {
+        background-color: red;
+        left: 75px;
+    }
+    .blue-car {
+        background-color: blue;
+        left: 500px;
+    }
+    .top {
+        width: 80px;
+        height: 120px;
+        border-radius: 5px;
+        position: absolute;
+        bottom: 25px;
+    }
+    .red-top {
+        background-color: aquamarine;
+        left: 37px;
+    }
+    .blue-top {
+        background-color: wheat;
+        left: 37px;
+    }
+    .wheel1 {
+        width: 15px;
+        height: 50px;
+        position: absolute;
+        background-color: black;
+        border-radius: 5px;
+        left: -15px;
+        bottom: 5px;
+    }
+    .wheel2 {
+        width: 15px;
+        height: 50px;
+        position: absolute;
+        background-color: black;
+        border-radius: 5px;
+        left: -15px;
+        bottom: 100px;
+    }
+    .wheel3 {
+        width: 15px;
+        height: 50px;
+        position: absolute;
+        background-color: black;
+        border-radius: 5px;
+        left: 149px;
+        bottom: 5px;
+    }
+    .wheel4 {
+        width: 15px;
+        height: 50px;
+        position: absolute;
+        background-color: black;
+        border-radius: 5px;
+        left: 149px;
+        bottom: 100px;
+    }
+    @keyframes drive {
+    0% {
+        top: 100%;
+    }
+    100% {
+        top: -70px;
+    }
+}
+</style>
+</html>
